@@ -1,0 +1,72 @@
+App.js
+
+// import { useEffect, useState } from 'react';
+// import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+
+
+// import Home from './page/Home';
+// import Signup from './page/Signup';
+// import Login from './page/Login';
+// import Profile from './page/Profile';
+
+
+
+// function App() {
+//   const [token, setToken] = useState(null);
+
+//   useEffect(() => {
+//     console.log('token from app.js: ', token);
+//     useNavigate('/');
+//   }, [token]);
+
+
+//   const updateToken = (newToken) => {
+//     setToken(newToken);
+//   };
+
+//   const useNavToHome = () => {
+//     const navigate = useNavigate();
+//     useEffect(()=>{
+//       if(token) navigate('/');
+//     },[navigate, token]);
+//   }
+//   useNavToHome();
+//   // Conditionally render Login page if token is null
+//   if (token === null) {
+//     return (
+//       <Routes>
+//         <Route path="/login" element={<Login updateToken={updateToken} />} />
+//         {/* Redirect to Login page for any other route */}
+//         <Route path="/*" element={<Navigate to="/login" replace />} />
+//       </Routes>
+//     );
+//   }
+
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Home />} />
+//       <Route path="/signup" element={<Signup updateToken={updateToken} />} />
+//       {/* Render protected routes only if token is not null */}
+//       <Route
+//         path="/protected"
+//         element={
+//           // Render protected routes only if token is not null
+//           token ? <ProtectedRoutes /> : <Navigate to="/login" replace />
+//         }
+//       />
+//     </Routes>
+//   );
+// }
+
+// // Example of protected routes to render when token is not null
+// const ProtectedRoutes = () => {
+//   return (
+//     <>
+//       {/* Render protected routes here */}
+//       <Route path="/dashboard" element={<Profile />} />
+//       {/* <Route path="/profile" element={<Profile />} /> */}
+//     </>
+//   );
+// };
+
+// export default App;
