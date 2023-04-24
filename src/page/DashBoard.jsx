@@ -1,15 +1,19 @@
 import React from 'react';
-import Navbar from '../component/Navbar';
-import Container from './Container';
 import '../styles/page-styles/DashBoard.css'
+import { Outlet } from 'react-router-dom';
+import Sidebar from '../component/Sidebar.jsx';
+// import { Routes, Route } from 'react-router-dom';
+// import HomeScreen from '../component/HomeScreen.jsx';
+// import Error from '../component/Error.jsx';
 
 const DashBoard = () => {
-    const email = localStorage.getItem('Email');
-    // console.log(email);
+
   return (
     <main className='d-flex'>
-        <Navbar name={email} />
-        <Container/>
+      <Sidebar />
+      <div className="dashboard-container d-flex">
+        <Outlet />
+      </div>
     </main>
   );
 }

@@ -12,7 +12,7 @@ const Login = () => {
         // Example: send data to API, authenticate user, etc.
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3001/login', {
+            const response = await fetch('http://localhost:3001/adminlogin', {
                 method: 'POST',
                 body: JSON.stringify({ email, password }),
                 headers: {
@@ -27,7 +27,8 @@ const Login = () => {
             // updateToken(token);
             
             localStorage.setItem('session',data.token);
-            console.log('token from login.js: ', localStorage.getItem('session'));
+            localStorage.setItem('a2asdasdasddijanijands3uzmaomiaiaosods5pueoiasdj6aosnsdsakn',true);
+            // console.log('token from login.js: ', localStorage.getItem('session'));
 
             navigate('/dashboard');
         } catch (error) {

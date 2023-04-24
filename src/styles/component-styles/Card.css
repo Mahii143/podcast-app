@@ -1,0 +1,21 @@
+
+.podcast-card {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+.podcast-card .podcast-name, .podcast-card .podcast-img, .podcast-card .podcast-speaker, .podcast-card .podcast-type {
+    width: 25%;
+}
+
+.podcast-card .podcast-img img {
+    margin-left: 1rem;
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,26 @@
+.side-bar {
+    color: var(--text);
+    background-color: var(--darkblue);
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+}
+.side-bar h1 {
+    padding: 0 1rem 0 2rem;
+    /* text-align: center; */
+}
+
+.side-bar-ul {
+    list-style: none;
+    padding: 0 1rem 0 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;    
+    gap: 1rem;
+}
+
+.side-bar-ul li a {
+    color: var(--text);
+    text-decoration: none;
+}

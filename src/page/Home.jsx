@@ -1,15 +1,17 @@
 import React from 'react';
-import Profile from './Profile';
-// import { Navigate } from 'react-router-dom';
 import Navbar from '../component/Navbar';
 
+import '../styles/page-styles/Home.css'
+import { Outlet } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div>Home
-      <Navbar/>
-      <Profile />
-    </div>
+    <>
+      <Navbar />
+      <div className='main'>
+        <Outlet />
+      </div>
+    </>
   )
 }
 

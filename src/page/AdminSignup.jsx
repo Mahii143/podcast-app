@@ -11,7 +11,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await fetch('http://localhost:3001/signup', {
+            await fetch('http://localhost:3001/adminsignup', {
                 method: 'POST',
                 body: JSON.stringify({ name, email, password }),
                 headers: {
@@ -19,11 +19,11 @@ const Signup = () => {
                 },
             });
             
-            //const data = await response.json();
+            // const data = await response.json();
             
-            console.log("sign up successfull");
+            // console.log("sign up successfull",data);
 
-            navigate('/');
+            navigate('/adminlogin');
 
         } catch (error) {
             console.error('Error while logging in:', error);

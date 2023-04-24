@@ -1,3 +1,8 @@
+:root {
+  --dashboard-container-bg:#101029e5;
+  --darkblue:#070713e5;
+  --text: white;
+}
 
 body {
   margin: 0;
@@ -16,6 +21,8 @@ code {
 #root {
   width:100vw;
   height:100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 

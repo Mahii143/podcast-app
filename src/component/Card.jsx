@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import '../styles/component-styles/Card.css';
 const Card = (props) => {
-    const {project_name, project_desc} = props.data;
+    const { image, name, speaker, type } = props.data;
     return (
-        <div className="card">
-            <h2>{project_name}</h2>
-            <p>{project_desc}</p>
-        </div>
+        <>
+            <div className="podcast-img">
+                <img src={image} alt=" " />
+            </div>
+            <div className="podcast-name">{name}</div>
+            <div className="podcast-speaker">{speaker}</div>
+            <div className="podcast-type">{type}</div>
+        </>
     )
 }
 
