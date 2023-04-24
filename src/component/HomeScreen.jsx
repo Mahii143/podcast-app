@@ -16,7 +16,6 @@ const HomeScreen = () => {
       })
         .then(res => res.json())
         .then(data => setData(data));
-      console.log(data);
 
     }
     catch (err) {
